@@ -1,0 +1,6 @@
+#!/bin/bash
+
+NUM_COMPLETE=$(ls -1 *.go 2>/dev/null | wc -l)
+NUM_PROBLEMS=75
+PERCENTAGE=$((NUM_COMPLETE * 100 / NUM_PROBLEMS))
+echo "${PERCENTAGE}% COMPLETE"
